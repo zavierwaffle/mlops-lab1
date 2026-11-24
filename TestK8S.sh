@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-PORT=6666
+readonly PORT=8080
 
 curl -s http://127.0.0.1:${PORT}/health | jq .
 

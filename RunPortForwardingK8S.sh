@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-PREFIX="bakturin-iris"
-PORT=6666
+readonly PREFIX='bakturin-iris'
+readonly PORT=8080
 
 kubectl -n mlops-students port-forward svc/${PREFIX} ${PORT}:80

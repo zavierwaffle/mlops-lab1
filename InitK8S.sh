@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-PREFIX="bakturin-iris"
+readonly PREFIX='bakturin-iris'
 
 kubectl apply --dry-run=client -f lab1.yaml
 kubectl apply --dry-run=server -f lab1.yaml
