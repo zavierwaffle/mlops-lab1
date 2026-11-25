@@ -5,4 +5,4 @@ set -euo pipefail
 readonly PREFIX='bakturin-iris'
 readonly PORT=8080
 
-kubectl -n mlops-students port-forward svc/${PREFIX} ${PORT}:80
+kubectl -n itmo-student-07 port-forward svc/${PREFIX} ${PORT}:80
